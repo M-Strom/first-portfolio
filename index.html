@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MasterStrom - Acceuil</title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- FAVICONS LINKS -->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="favicons/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="favicons/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="favicons/favicon-16x16.png"
+    />
+    <link rel="manifest" href="favicons/site.webmanifest" />
+
+    <!-- icons links -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+      integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <header>
+      <div id="navbar">
+        <nav>
+          <div id="logo">
+            <a href="index.html"
+              ><img src="favicons/favicon-32x32.png" alt=""
+            /></a>
+            <a href="index.html">MasterStrom</a>
+          </div>
+          <ul class="navlink">
+            <li class="link"><a href="index.html">Acceuil</a></li>
+            <li class="link"><a href="#skill">Compétences</a></li>
+            <li class="link"><a href="#portfolio">Portfolio</a></li>
+            <li class="link"><a href="#about">À propos</a></li>
+          </ul>
+          <div class="button">
+            <a href="#contact" class="cta">CONTACT</a>
+            <div class="burger-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+          </div> 
+        </nav>
+        <div class="navdivider"></div>
+      </div>
+
+      </div>
+    </header>
+
+    <section class="heros">
+      <div class="hero">
+        <div class="hero-contenu">
+          <h1>Developpeur Web <br />& Mobile</h1>
+          <h2>Yann ABESSOLO</h2>
+          <p>
+            Transformez vos idées en lignes de code, ensemble, créons des
+            expériences numériques qui captivent et engagent
+          </p>
+
+          <a href="doc/professional modern CV.pdf" class="cta">Télécharger le CV</a>
+        </div>
+
+        <div class="hero-image">
+          <img src="images/gallery-3.jpg" alt="" />
+        </div>
+      </div>
+    </section>
+
+    <section class="container">
+      <div class="about" id="about">
+        <div class="about-contenu">
+          <h2>A propos</h2>
+          <p>
+            L'informatique a toujours été une passion,
+            auxquels le proffessionnalisme et la rigueur fait mon ambitions .A
+            la recherche de nouveaux défis et de connaissances, je met a
+            disposition tout mon savoir et mes connaissances, pour réaliser
+            votre projet de site.
+          </p>
+
+          <a href="about.html" class="cta">En savoir plus...</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="container">
+      <h2 class="h2" id="skill">COMPETENCES</h2>
+      <div class="skill">
+        <div class="skills">
+          <h3>Social</h3>
+          <div class="divider"></div>
+          <ul>
+            <li>Dynamique</li>
+            <li>Communication</li>
+            <li>Rigueur</li>
+            <li>Travail d'équipe</li>
+          </ul>
+        </div>
+        <div class="skills">
+          <h3>Programmation</h3>
+          <div class="divider"></div>
+          <ul>
+            <li>HTML & CSS</li>
+            <li>PHP</li>
+            <li>JavaScript</li>
+            <li>Python</li>
+          </ul>
+        </div>
+        <div class="skills">
+          <h3>Informatique</h3>
+          <div class="divider"></div>
+          <ul>
+            <li>Maintenance</li>
+            <li>Suite Office</li>
+            <li>Réseau informatique</li>
+            <li>Base de données(MySQL)</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="container" id="portfolio">
+      <h2 class="h2">Mes réalisations</h2>
+      <div class="realisation">
+        <div class="images-folio">
+        <div class="project">
+          <h3>Maison d'hôte</h3>
+          <p>Création d'un site pour une agence de voyage.</p>
+          <a href="#" class="cta">Click ici...</a>
+
+        </div>
+      </div>
+      <div class="images-folio2">
+        <div class="project">
+          <h3>Robbie Lens</h3>
+          <p>Création d'un site vitrine pour une photographe.</p>
+          <a href="#" class="cta">Click ici...</a>
+        </div>
+      </div>
+      <div class="images-folio3">
+        <div class="project">
+          <h3>ESSIG-USIA Website</h3>
+          <p>Création d'un site internet pour l'université ESSIG-USIA.</p>
+          <a href="link-project/essigWebsite.html" class="cta">Click ici...</a>
+        </div>
+      </div>
+      </div>
+      <a href="portfolio.html" class="pro">Decouvrir plus</a>
+    </section>
+    <footer>
+      <section class="container" id="contact">
+        <h2>Me contacter</h2>
+        <form id="contact-Form">
+          <input type="text" id="name" placeholder="Nom..." required/>
+          <input type="E-mail" id="e-mail" placeholder="E-mail" required/>
+          <textarea id="message" placeholder="Votre message ici..." required></textarea>
+          <button type="submit" class="cta">ENVOYER</button>
+        </form>
+
+        <div class="divider"></div>
+        <div class="footer">
+          <ul id="icons">
+            <li>
+              <a href="https://facebook.com" target="_blank"
+                ><i class="fa fa-facebook"></i
+              ></a>
+            </li>
+            <li>
+              <a href="https://twitter.com" target="_blank"
+                ><i class="fa fa-twitter"></i
+              ></a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com/" target="_blank"
+                ><i class="fa fa-instagram"></i
+              ></a>
+            </li>
+          </ul>
+          <p>&copy;MasterStrom. Tous droits reservés, 2025.</p>
+        </div>
+      </section>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>

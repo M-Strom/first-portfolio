@@ -1,0 +1,146 @@
+.blockTitre {
+    text-align: center;
+    padding: 20px;
+}
+
+.container img {
+    width: 100%;
+}
+
+.detail {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 30px 10px;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+
+.detail h2 {
+    color: #f95959;
+    font-style: italic;
+    font-weight: bold;
+}
+
+.conception {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.conception .boxDetail {
+    border: 1px solid #2c3a47;
+    padding: 10px;
+    border-radius: 8px;
+    width: 50%;
+    box-shadow: 5px 5px 5px rgba(0,0,0,0.3);
+}
+
+.conception .boxDetail:hover {
+    color: #fff;
+    background-color: #2c3a47;
+    transition: all .2s ease;
+}
+
+.divider {
+    height: 2px;
+    width: 80%;
+    background-color: #2c3a47;
+    border-radius: 8px;
+    margin: 5px auto;
+}
+
+.boxDetail:hover .divider {
+    background-color: #f95959;
+}
+
+.boxDetail h3 {
+    text-align: center;
+    
+}
+
+.boxDetail ul {
+    padding: 20px;
+}
+
+.grid {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 400px 400px 400px;
+    grid-gap: 10px;
+    
+}
+
+.grid img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top;
+    box-shadow: 0px 0px 5px rgba(0,0,0,0.3);
+    border-radius: 10px;
+}
+
+.lien-image {
+    position: relative;
+}
+
+.lien-image p {
+    background-color: rgba(0,0,0,0.5);
+    z-index: 1000;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 0;
+    position: absolute;
+    color: #fff;
+    font-size: 1.5em;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    transition: height 0.2s ease-in;
+    opacity: 0;
+}
+
+.lien-image:hover p {
+    display: flex;
+    height: 100%;
+    opacity: 1;
+    
+}
+
+
+/* ***************responsive design************** */
+
+@media (max-width: 576px) {
+    .detail {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        padding: 30px 10px;
+        align-items: center;
+        justify-content: center;
+        gap: 30px;
+    }
+
+    .conception {
+        flex-wrap: wrap;
+        margin: auto;
+    }
+
+    .conception .boxDetail {
+        width: 90%;
+    }
+
+    .grid {
+        width: 90%;
+        margin: auto;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(6, 1fr);
+        grid-gap: 10px;
+        
+    }
+}

@@ -1,0 +1,211 @@
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    height: 100%;
+}
+
+.hero-contenu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    width: 40%;
+    color: #f3f3f3;
+    padding: 30px;
+
+}
+
+.hero-contenu h1 {
+    font-size: 2em;
+    color: #f00;
+}
+
+.hero-contenu p {
+    font-size: 1.1em;
+}
+
+.hero-image {
+    overflow: hidden;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    margin-left: 50px;
+}
+
+.hero-image img {
+    object-fit: cover;
+    width: 100%;
+}
+
+.heros {
+    background: linear-gradient(#666, #333);
+    height: auto;
+}
+
+.about {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    
+}
+
+.about-contenu {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.236);
+    border-radius: 5px;
+}
+
+.about-image {
+    height: 300px;
+    width: 100%;
+    overflow: hidden;
+}
+
+.about-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 30px auto;
+    padding: 20px;
+}
+
+.gallery img {
+    width: 30%;
+}
+
+.blogs {
+    display: flex;
+    gap: 30px;
+    margin: 30px 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+.blog {
+    overflow: hidden;
+    padding: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.236);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+    width: 30%;
+   
+}
+
+.blog img{
+    width: 100%;
+    height: 300px;
+}
+
+.blog .cta {
+    padding: 10px 50px;
+}
+form {
+    width: 50%;
+    margin: 30px auto;
+    padding: 20px;
+    background: #333;
+    color: #fff;
+    border-radius: 15px;
+    height: 400px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    align-items: center;
+}
+
+.input-form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+input {
+    border-radius: 10px;
+    height: 30px;
+    padding: 10px;
+}
+
+textarea {
+    width: 100%;
+    height: 80px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+button {
+    cursor: pointer;
+    font-weight: bold;
+}
+
+button:hover {
+    color: #fff;
+    border: 2px solid #fff;
+}
+
+@media (max-width: 900px) {
+    .blogs {
+        flex-wrap: wrap;
+    }
+
+    .blog {
+        width: 45%;
+    }
+
+    form {
+        width: 90%;
+    }
+}
+
+@media (max-width: 576px) {
+
+    .hero {
+        flex-direction: column-reverse;
+    }
+
+    .hero-image {
+        border-radius: 30px;
+        margin-left: 0;
+    }
+
+    .hero-contenu {
+        height: 100%;
+        width: 100%;
+    }
+
+    .gallery img {
+        width: 100%;
+    }
+
+    .blog {
+        width: 100%;
+    }
+
+    .blogs {
+        padding: 0;
+        margin: 30px 0;
+    }
+
+}
+
+

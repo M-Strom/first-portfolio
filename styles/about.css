@@ -1,0 +1,118 @@
+span {
+    color: #356;
+    font-weight: bold;
+}
+
+
+.skills {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+
+.skill {
+    padding: 15px;
+    border: none;
+    border-radius: 10px;
+    margin-top: 30px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.232);
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.skill ul {
+    line-height: 30px;
+    margin-left: 20px;
+}
+
+.divider {
+    height: 3px;
+    background: #000;
+    border-radius: 10px;
+    width: 80%;
+}
+
+.profil {
+    margin: 30px auto;
+    height: 400px;
+    overflow: hidden;
+    display: flex;
+    width: 80%;
+    height: 600px;
+    border-radius: 20px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.232);
+}
+
+h1 {
+    font-size: 2em;
+}
+
+.profil img {
+    width: 50%;
+    height: auto;
+    object-fit: cover;
+    object-position: 50% 10%;
+}
+
+.profil-contenu {
+    padding: 20px;
+    margin: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    line-height: 25px;
+    width: 50%;
+}
+
+.profil-contenu p {
+    width: 80%;
+}
+
+.contains {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin: 30px ;
+    width: 90%;
+}
+
+
+@media (max-width: 900px) {
+    .profil {
+        width: 100%;
+    }
+}
+
+@media (max-width: 576px) {
+    .profil {
+        flex-direction: column;
+        border-radius: 0;
+        height: auto;
+    }
+
+    .profil img {
+        width: 100%;
+    }
+
+    .profil-contenu {
+        margin: 0;
+        padding: 20px;
+        width: 100%;
+    }
+
+    .profil-contenu p {
+        width: 100%;
+    }
+
+    .skills {
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .skill {
+        width: 100%;
+    }
+
+}
